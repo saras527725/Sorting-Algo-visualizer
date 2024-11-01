@@ -1,0 +1,110 @@
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #3a3a3a, #222831);
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* Header Styling */
+#header {
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-color: #d65a31;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Sorting Panel */
+#sorting-panel {
+    width: 100%;
+    padding: 40px;
+    background-color: #393e46;
+}
+
+/* Sorting Container */
+#sort-container {
+    height: 400px;
+    width: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* Bar Styling */
+.bar {
+    width: 8px;
+    background-color: #00adb5;
+    transition: background-color 0.3s, height 0.3s;
+}
+
+.bar.sorted {
+    background-color: #d65a31;
+}
+
+/* Label Styling */
+#label {
+    color: #f0f0f0;
+    margin-right: 15px;
+}
+
+/* Select Dropdown */
+#list {
+    height: 50px;
+    font-size: 1rem;
+    color: #222831;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* Button Styling */
+button {
+    width: 120px;
+    height: 50px;
+    margin-left: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#init {
+    background-color: #00adb5;
+}
+
+#shuffle {
+    background-color: #ff2e63;
+}
+
+/* Responsive Bar Width */
+@media screen and (max-width: 700px) {
+    .bar {
+        width: 4px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bar {
+        width: 2px;
+    }
+}

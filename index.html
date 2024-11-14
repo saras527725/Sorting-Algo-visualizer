@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <div id="header">
         <h1>Sorting Visualizer</h1>
     </div>
@@ -21,35 +22,36 @@
         </div>
     </div>
 
-    <div id="bottom-panel" class="text-center">
-        <form>
+    <div id="bottom-panel">
+        <form action=" ">
 
             <div class="form-row justify-content-center m-0 mt-4">
-                <div class="form-group d-flex align-items-center">
-                    <h3 id="label">Choose Algorithm</h3>
+                <div class="form-group d-flex">
+                    <h3 id="label">Choose The Sorting Algorithm</h3>
                     <select name="" id="list" class="form-control">
-                        <option value="insertion">Insertion Sort</option>
-                        <option value="selection">Selection Sort</option>
-                        <option value="bubble">Bubble Sort</option>
-                        <option value="quick">Quick Sort</option>
-                        <option value="merge">Merge Sort</option>
-                        <option value="count">Counting Sort</option>
-                        <option value="shell">Shell Sort</option>
-                        <option value="radix">Radix Sort</option>
-                    </select>
+
+                                <option value="insertion">Insertion Sort</option>
+                                <option value="selection">Selection Sort</option>
+                                <option value="bubble">Bubble Sort</option>
+                                <option value="quick">Quick Sort</option>
+                                <option value="merge">Merge Sort</option>
+                                <option value="count">Counting Sort</option>
+                                <option value="shell">Shell Sort</option>
+                                <option value="radix">Radix Sort</option>
+                            
+                        </select>
                 </div>
 
-                <button class="btn" id="init">Sort</button>
-                <button class="btn" id="shuffle">Shuffle</button>
+                <button class="btn btn-success" id="init">Sort</button>
+                <button class="btn btn-danger" id="shuffle">Shuffle</button>
 
             </div>
         </form>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
     <script src="app.js" async defer></script>
 
 </body>
-
-</html>

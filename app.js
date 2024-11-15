@@ -1,7 +1,6 @@
 
 var barsCount = 256;
 var heights = [];
-
 var sorted = false;
 
 function makeBars() {
